@@ -239,39 +239,40 @@
 
         /* ===== GALLERY GRID ===== */
         .gallery-section {
-            background-color: var(--light-text);
-        }
-
-        .gallery-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .gallery-column {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            flex: 1;
-            min-width: 280px;
-            max-width: 350px;
-        }
-
-        .gallery-column img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: var(--shadow-light);
-            object-fit: cover;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .gallery-column img:hover {
-            transform: scale(1.03);
-            box-shadow: var(--shadow-medium);
-        }
-
+           background-color: var(--light-text);
+           padding: 40px 20px;
+         }
+         
+         .gallery-grid {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 20px;
+           justify-content: center;
+         }
+         
+         .gallery-column {
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+           flex: 1;
+           min-width: 280px;
+           max-width: 350px;
+         }
+         
+         /* Make sure all columns are equal height */
+         .gallery-column img {
+           width: 100%;
+           height: auto;
+           border-radius: 8px;
+           box-shadow: var(--shadow-light);
+           object-fit: cover;
+           transition: transform 0.3s ease, box-shadow 0.3s ease;
+         }
+         
+         .gallery-column img:hover {
+           transform: scale(1.03);
+           box-shadow: var(--shadow-medium);
+         }
         /* ===== SPLASH SCREEN ===== */
         .splash {
             position: fixed;
